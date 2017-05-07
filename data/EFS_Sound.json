@@ -1,0 +1,414 @@
+[
+  null,
+  {
+    "id": 1,
+    "se":[    
+        {"name": "swordbasic_1", "volume": 100, "pitch": 100 },
+        {"name": "swordbasic_2", "volume": 100, "pitch": 100 },
+        {"name": "swordbasic_3", "volume": 100, "pitch": 100 },
+        {"name": "swordbasic_4", "volume": 100, "pitch": 100 },
+        {"name": "swordbasic_5", "volume": 100, "pitch": 100 },
+        {"name": "swordbasic_6", "volume": 100, "pitch": 100 },
+        {"name": "swordbasic_7", "volume": 100, "pitch": 100 },
+        {"name": "swordbasic_8", "volume": 100, "pitch": 100 },
+        {"name": "swordbasic_9", "volume": 100, "pitch": 100 },
+        {"name": "swordbasic_10", "volume": 100, "pitch": 100 },
+        {"name": "swordbasic_11", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 2,
+    "se":[    
+        {"name": "spearbasic_01", "volume": 100, "pitch": 100 },
+        {"name": "spearbasic_02", "volume": 100, "pitch": 100 },
+        {"name": "spearbasic_03", "volume": 100, "pitch": 100 },
+        {"name": "spearbasic_04", "volume": 100, "pitch": 100 },
+        {"name": "spearbasic_05", "volume": 100, "pitch": 100 },
+        {"name": "spearbasic_06", "volume": 100, "pitch": 100 },
+        {"name": "spearbasic_07", "volume": 100, "pitch": 100 },
+        {"name": "spearbasic_08", "volume": 100, "pitch": 100 },
+        {"name": "spearbasic_09", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 3,
+    "se":[    
+        {"name": "axehit_1", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 4,
+    "se":[    
+        {"name": "macebasic_01", "volume": 100, "pitch": 100 },
+        {"name": "macebasic_02", "volume": 100, "pitch": 100 },
+        {"name": "macebasic_03", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 5,
+    "se":[    
+        {"name": "arrowbasic_1", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_2", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_3", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_4", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_5", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_6", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_7", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_8", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_9", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_10", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_11", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_12", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_13", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_14", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 6,
+    "se":[    
+        {"name": "arrowbasic_1", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_2", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_3", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_4", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_5", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_6", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_7", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_8", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_9", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_10", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_11", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_12", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_13", "volume": 100, "pitch": 100 },
+        {"name": "arrowbasic_14", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 7,
+    "se":[    
+        {"name": "shield_cav_1", "volume": 100, "pitch": 100 },
+        {"name": "shield_cav_2", "volume": 100, "pitch": 100 },
+        {"name": "shield_cav_3", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 8,
+    "se":[    
+        {"name": "shield_wood_wood_01", "volume": 100, "pitch": 100 },
+        {"name": "shield_wood_wood_02", "volume": 100, "pitch": 100 },
+        {"name": "shield_wood_wood_03", "volume": 100, "pitch": 100 },
+        {"name": "shield_wood_wood_04", "volume": 100, "pitch": 100 },
+        {"name": "shield_wood_wood_05", "volume": 100, "pitch": 100 },
+        {"name": "shield_wood_wood_06", "volume": 100, "pitch": 100 },
+        {"name": "shield_wood_wood_07", "volume": 100, "pitch": 100 },
+        {"name": "shield_wood_wood_08", "volume": 100, "pitch": 100 },
+        {"name": "shield_wood_wood_09", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 9,
+    "se":[    
+        {"name": "metal_on_wood_01", "volume": 100, "pitch": 100 },
+        {"name": "metal_on_wood_02", "volume": 100, "pitch": 100 },
+        {"name": "metal_on_wood_03", "volume": 100, "pitch": 100 },
+        {"name": "metal_on_wood_04", "volume": 100, "pitch": 100 },
+        {"name": "metal_on_wood_05", "volume": 100, "pitch": 100 },
+        {"name": "metal_on_wood_06", "volume": 100, "pitch": 100 },
+        {"name": "metal_on_wood_07", "volume": 100, "pitch": 100 },
+        {"name": "metal_on_wood_08", "volume": 100, "pitch": 100 },
+        {"name": "metal_on_wood_09", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 10,
+    "se":[    
+        {"name": "sword_clash_01", "volume": 100, "pitch": 100 },
+        {"name": "sword_clash_02", "volume": 100, "pitch": 100 },
+        {"name": "sword_clash_03", "volume": 100, "pitch": 100 },
+        {"name": "sword_clash_04", "volume": 100, "pitch": 100 },
+        {"name": "sword_clash_05", "volume": 100, "pitch": 100 },
+        {"name": "sword_clash_06", "volume": 100, "pitch": 100 },
+        {"name": "sword_clash_07", "volume": 100, "pitch": 100 },
+        {"name": "sword_clash_08", "volume": 100, "pitch": 100 },
+        {"name": "sword_clash_09", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 11,
+    "se":[    
+        {"name": "shield_metal_metal_01", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_02", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_03", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_04", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_05", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_06", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_07", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_08", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_09", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 12,
+    "se":[    
+        {"name": "shield_metal_metal_01", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_02", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_03", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_04", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_05", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_06", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_07", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_08", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_metal_09", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 12,
+    "se":[    
+        {"name": "shield_metal_wood_01", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_wood_02", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_wood_03", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_wood_04", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_wood_05", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_wood_06", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_wood_07", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_wood_08", "volume": 100, "pitch": 100 },
+        {"name": "shield_metal_wood_09", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 13,
+    "se":[    
+        {"name": "bow twang_01", "volume": 100, "pitch": 100 },
+        {"name": "bow twang_02", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 14,
+    "se":[    
+        {"name": "arrow_pass_01", "volume": 100, "pitch": 100 },
+        {"name": "arrow_pass_02", "volume": 100, "pitch": 100 },
+        {"name": "arrow_pass_03", "volume": 100, "pitch": 100 },
+        {"name": "arrow_pass_04", "volume": 100, "pitch": 100 },
+        {"name": "arrow_pass_05", "volume": 100, "pitch": 100 },
+        {"name": "arrow_pass_06", "volume": 100, "pitch": 100 },
+        {"name": "arrow_pass_07", "volume": 100, "pitch": 100 },
+        {"name": "arrow_pass_08", "volume": 100, "pitch": 100 },
+        {"name": "arrow_pass_09", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 15,
+    "se":[    
+        {"name": "arrow_ground_01", "volume": 100, "pitch": 100 },
+        {"name": "arrow_ground_02", "volume": 100, "pitch": 100 },
+        {"name": "arrow_ground_03", "volume": 100, "pitch": 100 },
+        {"name": "arrow_ground_04", "volume": 100, "pitch": 100 },
+        {"name": "arrow_ground_05", "volume": 100, "pitch": 100 },
+        {"name": "arrow_ground_06", "volume": 100, "pitch": 100 },
+        {"name": "arrow_ground_07", "volume": 100, "pitch": 100 },
+        {"name": "arrow_ground_08", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 16,
+    "se":[    
+        {"name": "cbow_01", "volume": 100, "pitch": 100 },
+        {"name": "cbow_02", "volume": 100, "pitch": 100 },
+        {"name": "cbow_03", "volume": 100, "pitch": 100 },
+        {"name": "cbow_04", "volume": 100, "pitch": 100 },
+        {"name": "cbow_05", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 17,
+    "se":[    
+        {"name": "bolt_pass_01", "volume": 100, "pitch": 100 },
+        {"name": "bolt_pass_02", "volume": 100, "pitch": 100 },
+        {"name": "bolt_pass_03", "volume": 100, "pitch": 100 },
+        {"name": "bolt_pass_04", "volume": 100, "pitch": 100 },
+        {"name": "bolt_pass_05", "volume": 100, "pitch": 100 },
+        {"name": "bolt_pass_06", "volume": 100, "pitch": 100 },
+        {"name": "bolt_pass_07", "volume": 100, "pitch": 100 },
+        {"name": "bolt_pass_08", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 18,
+    "se":[    
+        {"name": "bolt_ground_01", "volume": 100, "pitch": 100 },
+        {"name": "bolt_ground_02", "volume": 100, "pitch": 100 },
+        {"name": "bolt_ground_03", "volume": 100, "pitch": 100 },
+        {"name": "bolt_ground_04", "volume": 100, "pitch": 100 },
+        {"name": "bolt_ground_05", "volume": 100, "pitch": 100 },
+        {"name": "bolt_ground_06", "volume": 100, "pitch": 100 },
+        {"name": "bolt_ground_07", "volume": 100, "pitch": 100 },
+        {"name": "bolt_ground_08", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 19,
+    "se":[    
+        {"name": "throw_knife_01", "volume": 100, "pitch": 100 },
+        {"name": "throw_knife_02", "volume": 100, "pitch": 100 },
+        {"name": "throw_knife_03", "volume": 100, "pitch": 100 },
+        {"name": "throw_knife_04", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 20,
+    "se":[    
+        {"name": "knife_pass_01", "volume": 100, "pitch": 100 },
+        {"name": "knife_pass_02", "volume": 100, "pitch": 100 },
+        {"name": "knife_pass_03", "volume": 100, "pitch": 100 },
+        {"name": "knife_pass_04", "volume": 100, "pitch": 100 }
+    ]
+  },
+  {
+    "id": 21,
+    "se":[    
+        {"name": "knife_ground_01", "volume": 100, "pitch": 100 },
+        {"name": "knife_ground_02", "volume": 100, "pitch": 100 },
+        {"name": "knife_ground_03", "volume": 100, "pitch": 100 }
+    ]
+  },
+  {
+    "id": 22,
+    "se":[    
+        {"name": "throw_javelin_01", "volume": 100, "pitch": 100 },
+        {"name": "throw_javelin_02", "volume": 100, "pitch": 100 },
+        {"name": "throw_javelin_03", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 23,
+    "se":[    
+        {"name": "javelin_pass_by_1", "volume": 100, "pitch": 100 },
+        {"name": "javelin_pass_by_2", "volume": 100, "pitch": 100 }
+    ]
+  },
+  {
+    "id": 24,
+    "se":[    
+        {"name": "javelin_ground_01", "volume": 100, "pitch": 100 }
+    ]
+  },
+  {
+    "id": 25,
+    "se":[    
+        {"name": "missile_flesh_01", "volume": 100, "pitch": 100 },
+        {"name": "missile_flesh_02", "volume": 100, "pitch": 100 },
+        {"name": "missile_flesh_03", "volume": 100, "pitch": 100 },
+        {"name": "missile_flesh_04", "volume": 100, "pitch": 100 },
+        {"name": "missile_flesh_05", "volume": 100, "pitch": 100 },
+        {"name": "missile_flesh_06", "volume": 100, "pitch": 100 },
+        {"name": "missile_flesh_07", "volume": 100, "pitch": 100 },
+        {"name": "missile_flesh_08", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 26,
+    "se":[    
+        {"name": "ca_fire1", "volume": 100, "pitch": 100 },
+        {"name": "ca_fire2", "volume": 100, "pitch": 100 },
+        {"name": "ca_fire3", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 27,
+    "se":[    
+        {"name": "rock_whoosh_01", "volume": 100, "pitch": 100 },
+        {"name": "rock_whoosh_02", "volume": 100, "pitch": 100 },
+        {"name": "rock_whoosh_03", "volume": 100, "pitch": 100 },
+        {"name": "rock_whoosh_04", "volume": 100, "pitch": 100 },
+        {"name": "rock_whoosh_05", "volume": 100, "pitch": 100 },
+        {"name": "rock_whoosh_06", "volume": 100, "pitch": 100 },
+        {"name": "rock_whoosh_07", "volume": 100, "pitch": 100 },
+        {"name": "rock_whoosh_08", "volume": 100, "pitch": 100 },
+        {"name": "rock_whoosh_09", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 28,
+    "se":[    
+        {"name": "axe_ground_01", "volume": 100, "pitch": 100 },
+        {"name": "axe_ground_02", "volume": 100, "pitch": 100 },
+        {"name": "axe_ground_03", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 29,
+    "se":[    
+        {"name": "slinghit1", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 30,
+    "se":[    
+        {"name": "slingthrow_01", "volume": 100, "pitch": 100 },
+        {"name": "slingthrow_02", "volume": 100, "pitch": 100 },
+        {"name": "slingthrow_03", "volume": 100, "pitch": 100 },
+        {"name": "slingthrow_04", "volume": 100, "pitch": 100 },
+        {"name": "slingthrow_05", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 31,
+    "se":[    
+        {"name": "stone_pass_01", "volume": 100, "pitch": 100 },
+        {"name": "stone_pass_02", "volume": 100, "pitch": 100 },
+        {"name": "stone_pass_03", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 32,
+    "se":[    
+        {"name": "stone_ground_01", "volume": 100, "pitch": 100 },
+        {"name": "stone_ground_02", "volume": 100, "pitch": 100 },
+        {"name": "stone_ground_03", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 33,
+    "se":[    
+        {"name": "bullet_ric_01", "volume": 100, "pitch": 100 },
+        {"name": "bullet_ric_02", "volume": 100, "pitch": 100 },
+        {"name": "bullet_ric_03", "volume": 100, "pitch": 100 },
+        {"name": "bullet_ric_04", "volume": 100, "pitch": 100 },
+        {"name": "bullet_ric_05", "volume": 100, "pitch": 100 },
+        {"name": "bullet_ric_06", "volume": 100, "pitch": 100 },
+        {"name": "bullet_ric_07", "volume": 100, "pitch": 100 },
+        {"name": "bullet_ric_08", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 34,
+    "se":[    
+        {"name": "gun_shoot_01", "volume": 100, "pitch": 100 },
+        {"name": "gun_shoot_02", "volume": 100, "pitch": 100 },
+        {"name": "gun_shoot_03", "volume": 100, "pitch": 100 },
+        {"name": "gun_shoot_04", "volume": 100, "pitch": 100 },
+        {"name": "gun_shoot_05", "volume": 100, "pitch": 100 },
+        {"name": "gun_shoot_06", "volume": 100, "pitch": 100 },
+        {"name": "gun_shoot_07", "volume": 100, "pitch": 100 },
+        {"name": "gun_shoot_08", "volume": 100, "pitch": 100 },
+        {"name": "gun_shoot_09", "volume": 100, "pitch": 100 }
+        ]
+  },
+  {
+    "id": 35,
+    "se":[    
+        {"name": "bullet_pass_01", "volume": 100, "pitch": 100 },
+        {"name": "bullet_pass_02", "volume": 100, "pitch": 100 },
+        {"name": "bullet_pass_03", "volume": 100, "pitch": 100 },
+        {"name": "bullet_pass_04", "volume": 100, "pitch": 100 },
+        {"name": "bullet_pass_05", "volume": 100, "pitch": 100 },
+        {"name": "bullet_pass_06", "volume": 100, "pitch": 100 },
+        {"name": "bullet_pass_07", "volume": 100, "pitch": 100 },
+        {"name": "bullet_pass_08", "volume": 100, "pitch": 100 },
+        {"name": "bullet_pass_09", "volume": 100, "pitch": 100 }
+        ]
+  }
+
+
+
+
+]
