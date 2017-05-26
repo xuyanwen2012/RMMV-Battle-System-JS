@@ -3,7 +3,7 @@
 // MBBS_InstantMessage.js
 //=============================================================================
 /*:
- * @plugindesc v1.0 Instant Message Plugins 
+ * @plugindesc v1.1 Instant Message Plugins 
    群战系统MV插件系列之 - 即时消息系统 【XP移植】
  * @author Chivalry Studio Plugins / Ivan
 
@@ -57,7 +57,7 @@
 * @help 
 * --------------------------------------------------------------------------------
 * Free for non commercial use.
-* Version 1.0
+* Version 1.1
 * --------------------------------------------------------------------------------
 * Mount Blade Battle System Engine Plugins - Instant Message Plugins 
   群战系统MV插件系列之 - 即时消息系统 【移植】
@@ -103,15 +103,22 @@
 * --------------------------------------------------------------------------------
 * Version History
 * --------------------------------------------------------------------------------
-
-* 1.0 - Release
-
+* 
+* 1.1 - [2017-5-26]
+*    修复调出菜单后信息栏不再显示的BUG
+*    Fixed bug: after calling menu, the notification window will no longer display
+*
+* 1.0 - [2016-4-6]
+*    正式发布
+*    Release
+*
 */
 
 var Imported = Imported || {};
 Imported.MBBS_InstantMessage = true;
 var MBBS_MV = MBBS_MV || {};
 MBBS_MV.InstantMessage = MBBS_MV.InstantMessage || {};
+
 //=============================================================================
 // Parameter Variables
 //=============================================================================
@@ -147,6 +154,7 @@ MBBS_MV.Param.TextColor         = String(MBBS_MV.Parameters['TextColor']);
 function Notification() {
     throw new Error('This is a static class');
 };
+
 Notification.FRAME_PER_SECOND = 60;
 
 Notification.initMember = function() {
@@ -162,6 +170,17 @@ Notification.initMember = function() {
     this._sprite.z = 99999;
     this._hasInitalized = false;
 };
+
+Notification.initialize = function() {
+    this._hasInitalized = true;
+    Notification.move(
+        MBBS_MV.Param.InitialX,
+        MBBS_MV.Param.InitialY,
+        MBBS_MV.Param.Width,
+        MBBS_MV.Param.Height
+        );
+}
+
 Object.defineProperty(Notification, 'opacity', {
     get: function() {
         return this._opacity;
@@ -172,52 +191,62 @@ Object.defineProperty(Notification, 'opacity', {
     },
     configurable: true
 });
+
 Notification.setFont = function(fontFace,fontSize,textColor) {
     this._sprite.bitmap.fontFace           = fontFace;
     this._sprite.bitmap.fontSize           = fontSize;
     this._sprite.bitmap.textColor          = textColor;
 };
+
 Notification.move = function(x,y,width,height) {
     this._sprite.x = x;
     this._sprite.y = y;
     this._sprite.z = 99999;
     this._sprite.bitmap = new Bitmap(width, height);
+    this.refresh();
+};
+
+Notification.refresh = function () {
     SceneManager._scene.addChild(this._sprite);
     if ($gameSystem != null) {
         this.redraw();
-    }
+    } 
 };
+
 Notification.setLimit = function(max){
     this._limit = max;
 };
+
 Notification.post = function(msg, color, size) {
     if (this._pause) {
         return;
     }
     if (!this._hasInitalized) {
-        this._hasInitalized = true;
-        Notification.move(
-            MBBS_MV.Param.InitialX,
-            MBBS_MV.Param.InitialY,
-            MBBS_MV.Param.Width,
-            MBBS_MV.Param.Height
-            );
+        this.initialize();
     }
+    // creating message node and push it to $gameSystem.notifications
     var node = new Notification_Message(msg.slice(0), color,size);
     $gameSystem.notifications.push(node);
-    while($gameSystem.notifications.length > 50){
+    // shift when reach max display
+    while($gameSystem.notifications.length > this._limit){
         $gameSystem.notifications.shift();
     }
     if ($gameSystem != null) {
         this.redraw();
     }
-    this.opacity = 255;
+    //reset counter to and to display the message
     this._count = this._delay * this.FRAME_PER_SECOND;
+    this.opacity = 255;
+
 };
+
 Notification.clear = function () {
     $gameSystem.notifications = [];
     this.redraw();
 };
+/**
+*   Draw the nodes stored in the gameSystem Array
+*/
 Notification.redraw = function () {
     var b = this._sprite.bitmap;
     b.clear();
@@ -244,6 +273,7 @@ Notification.redraw = function () {
         y -= 4;
     });
 };
+
 Notification.update = function () {
     if (this._count > 0) {
         this._count -= 1;
@@ -253,18 +283,24 @@ Notification.update = function () {
         this.opacity -= this._disappearSpeed;
     }
 };
+
 Notification.show = function () {
     this._sprite.visible = true;
+    this.refresh();
 };
+
 Notification.hide = function () {
     this._sprite.visible = false;
 };
+
 Notification.pause = function () {
     this._pause = true;
 };
+
 Notification.restore = function () {
     this._pause = false;
 };
+
 Notification.setDelay = function (delay) {
     this._delay = delay;
 };
@@ -274,6 +310,7 @@ Notification.setDelay = function (delay) {
 function Notification_Message() {
     this.initialize.apply(this, arguments);
 }
+
 Notification_Message.prototype.initialize = function(msg, color,size) {
     this._msg = msg == null ? '' : msg;
     this._color = color;
@@ -285,11 +322,13 @@ Notification_Message.prototype.initialize = function(msg, color,size) {
         this._size = MBBS_MV.Param.FontSize;
     }
 };
+
 Object.defineProperties(Notification_Message.prototype, {
     msg:        { get: function() { return this._msg;       }, configurable: true},
     color:      { get: function() { return this._color;     }, configurable: true},
     size:       { get: function() { return this._size;      }, configurable: true}, 
 });
+
 //=============================================================================
 // Game_System
 //=============================================================================
@@ -298,6 +337,7 @@ Game_System.prototype.initialize = function() {
     MBBS_MV.InstantMessage.Game_System_initialize.call(this);
     this._notifications = [];
 };
+
 Object.defineProperty(Game_System.prototype, 'notifications', {
     get: function() {
         return this._notifications;
@@ -307,6 +347,7 @@ Object.defineProperty(Game_System.prototype, 'notifications', {
     },
     configurable: true
 });
+
 //=============================================================================
 // Scene_Map
 //=============================================================================
@@ -315,11 +356,13 @@ Scene_Map.prototype.update = function() {
     MBBS_MV.InstantMessage.Scene_Map_update.call(this);
     Notification.update();
 };
+
 MBBS_MV.InstantMessage.Scene_Map_start = Scene_Map.prototype.start;
 Scene_Map.prototype.start = function() {
     MBBS_MV.InstantMessage.Scene_Map_start.call(this);
     Notification.show();
 };
+
 MBBS_MV.InstantMessage.Scene_Map_stop = Scene_Map.prototype.stop;
 Scene_Map.prototype.stop = function() {
     MBBS_MV.InstantMessage.Scene_Map_stop.call(this);
@@ -330,22 +373,25 @@ Scene_Map.prototype.stop = function() {
 //=============================================================================
 if (Imported.MBBS_MV) {
 
-MBBS_MV.InstantMessage.Scene_EFS_Battle_update = Scene_EFS_Battle.prototype.update;
-Scene_EFS_Battle.prototype.update = function() {
-    MBBS_MV.InstantMessage.Scene_EFS_Battle_update.call(this);
-    Notification.update();
-};
-MBBS_MV.InstantMessage.Scene_EFS_Battle_start = Scene_EFS_Battle.prototype.start;
-Scene_EFS_Battle.prototype.start = function() {
-    MBBS_MV.InstantMessage.Scene_EFS_Battle_start.call(this);
-    Notification.show();
-};
-MBBS_MV.InstantMessage.Scene_EFS_Battle_stop = Scene_EFS_Battle.prototype.stop;
-Scene_EFS_Battle.prototype.stop = function() {
-    MBBS_MV.InstantMessage.Scene_EFS_Battle_stop.call(this);
-    Notification.hide();
-};
+    MBBS_MV.InstantMessage.Scene_EFS_Battle_update = Scene_EFS_Battle.prototype.update;
+    Scene_EFS_Battle.prototype.update = function() {
+        MBBS_MV.InstantMessage.Scene_EFS_Battle_update.call(this);
+        Notification.update();
+    };
+
+    MBBS_MV.InstantMessage.Scene_EFS_Battle_start = Scene_EFS_Battle.prototype.start;
+    Scene_EFS_Battle.prototype.start = function() {
+        MBBS_MV.InstantMessage.Scene_EFS_Battle_start.call(this);
+        Notification.show();
+    };
+
+    MBBS_MV.InstantMessage.Scene_EFS_Battle_stop = Scene_EFS_Battle.prototype.stop;
+    Scene_EFS_Battle.prototype.stop = function() {
+        MBBS_MV.InstantMessage.Scene_EFS_Battle_stop.call(this);
+        Notification.hide();
+    };
 }
+
 // ======================================================================
 // Game_Temp
 // ======================================================================
