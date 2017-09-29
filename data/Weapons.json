@@ -1,0 +1,7 @@
+[
+null,
+{"id":1,"animationId":6,"description":"","etypeId":1,"traits":[],"iconIndex":97,"name":"短剑","note":"","params":[0,0,10,0,0,0,0,0],"price":500,"wtypeId":1},
+{"id":2,"animationId":0,"description":"","etypeId":1,"traits":[],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":0},
+{"id":3,"animationId":0,"description":"","etypeId":1,"traits":[],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":0},
+{"id":4,"animationId":0,"description":"","etypeId":1,"traits":[],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":0}
+]

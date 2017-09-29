@@ -1,0 +1,7 @@
+[
+null,
+{"id":1,"atypeId":1,"description":"日耳曼尼亚地区常见小型蒙皮圆盾","etypeId":2,"traits":[],"iconIndex":128,"name":"日耳曼圆盾","note":"","params":[0,0,0,10,0,0,0,0],"price":200},
+{"id":2,"atypeId":0,"description":"","etypeId":2,"traits":[],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
+{"id":3,"atypeId":0,"description":"","etypeId":2,"traits":[],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
+{"id":4,"atypeId":0,"description":"","etypeId":2,"traits":[],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0}
+]
